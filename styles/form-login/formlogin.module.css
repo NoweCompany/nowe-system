@@ -1,0 +1,157 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 100vh;
+}
+
+.mainform {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 1rem auto;
+    height: 25rem;
+}
+
+.formTitle {
+    font-family: extrabold;
+    font-size: 2rem;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: start;
+}
+
+.inputPassword{
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inputPassword {
+    display: flex;
+    align-items: start;
+    position: relative;
+}
+
+.showPasswordButton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    color: #d6d6d6;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+
+}
+
+.input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 20rem;
+    border: solid 1px #e6e6e6;
+}
+
+.img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-left: 10rem;
+}
+
+.background {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left, #f1f1f1 50%, #000000 50%);
+}
+
+@media (max-width:1200px){
+    .background {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to left, #000000 50%, #000000 50%);
+    }
+
+    .img {
+        width: 20%;
+        height: auto;
+        margin: 2rem auto;
+        display: none;
+    }
+
+    .mainform {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width:600px) {
+    .background {
+        background: none;
+        background-color: #0063da;
+    }
+
+    .mainContainer {
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .mainform {
+        width: 100%;
+        max-width: 400px;
+        padding: 30px;
+        height: auto;
+    }
+    
+    .input {
+        padding: 10px;
+        border-radius: 5px;
+        width: 15rem;
+        border: solid 1px #e6e6e6;
+    }
+
+    .icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        border-radius: 5px;
+        height: auto;
+    
+    }
+}
